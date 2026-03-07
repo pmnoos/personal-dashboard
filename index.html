@@ -23,16 +23,36 @@
 
             <!-- Main Grid -->
             <main class="dashboard-grid">
-                <!-- Weather Widget -->
-                <section class="widget weather-widget">
-                    <div class="widget-header">
-                        <i class="fas fa-cloud-sun"></i>
-                        <h2>Weather</h2>
-                    </div>
-                    <div class="widget-content" id="weather-content">
-                        <p>Loading weather...</p>
-                    </div>
-                </section>
+                <div class="left-column">
+                    <!-- Weather Widget -->
+                    <section class="widget weather-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-cloud-sun"></i>
+                            <h2>Weather</h2>
+                        </div>
+                        <div class="widget-content" id="weather-content">
+                            <p>Loading weather...</p>
+                        </div>
+                    </section>
+
+                    <!-- World Clock Widget -->
+                    <section class="widget world-clock-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-globe"></i>
+                            <h2>World Clock</h2>
+                        </div>
+                        <div class="widget-content" id="world-clock-content"></div>
+                    </section>
+
+                    <!-- Currency Widget -->
+                    <section class="widget currency-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-coins"></i>
+                            <h2>GBP ↔ AUD</h2>
+                        </div>
+                        <div class="widget-content" id="currency-content"></div>
+                    </section>
+                </div>
 
                 <div class="middle-column">
                     <!-- Calendar Widget -->
@@ -88,6 +108,8 @@
             </main>
         </div>
         <script src="js/weather.js"></script>
+        <script src="js/world-clock.js"></script>
+        <script src="js/currency.js"></script>
         <script src="js/calendar.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/podcasts.js"></script>

@@ -74,6 +74,12 @@ body {
     gap: 12px;
 }
 
+.left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 .right-column {
     display: flex;
     flex-direction: column;
@@ -822,6 +828,85 @@ body {
         opacity: 0.8;
     }
 
+    .clock-list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .clock-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 12px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .clock-label {
+        font-size: 0.82rem;
+        color: rgba(255, 255, 255, 0.65);
+    }
+
+    .clock-time {
+        font-size: 0.95rem;
+        color: #8ec5fc;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    .currency-status {
+        font-size: 0.75rem;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 8px;
+    }
+
+    .currency-rate {
+        font-size: 0.95rem;
+        color: #e0c3fc;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .currency-converter {
+        display: grid;
+        grid-template-columns: 1fr auto auto 1fr;
+        gap: 8px;
+        align-items: center;
+    }
+
+    #currency-amount,
+    #currency-from,
+    .currency-result {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-radius: 10px;
+        padding: 10px 12px;
+        color: white;
+        font-size: 0.85rem;
+    }
+
+    #currency-amount {
+        outline: none;
+    }
+
+    #currency-amount:focus,
+    #currency-from:focus {
+        border-color: #8ec5fc;
+    }
+
+    .currency-arrow {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 0.95rem;
+    }
+
+    .currency-result {
+        text-align: center;
+        color: #8ec5fc;
+        font-weight: 700;
+    }
+
 @media (max-width: 1100px) {
     body {
         padding: 16px;
@@ -832,10 +917,7 @@ body {
         gap: 18px;
     }
 
-    .weather-widget {
-        grid-column: 1 / -1;
-    }
-
+    .left-column,
     .middle-column,
     .right-column {
         grid-column: auto;
@@ -867,6 +949,7 @@ body {
         padding: 18px;
     }
 
+    .left-column,
     .middle-column,
     .right-column {
         gap: 10px;
@@ -910,7 +993,18 @@ body {
     .forecast-toggle,
     .bbc-sounds-btn,
     .vpn-btn,
-    .radio-station-link {
+    .radio-station-link,
+    #currency-amount,
+    #currency-from,
+    .currency-result {
         font-size: 0.8rem;
+    }
+
+    .currency-converter {
+        grid-template-columns: 1fr;
+    }
+
+    .currency-arrow {
+        display: none;
     }
 }
