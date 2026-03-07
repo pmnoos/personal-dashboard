@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Personal Dashboard</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="dashboard">
+            <!-- Header -->
+            <header class="dashboard-header">
+                <h1>My Dashboard</h1>
+                <div class="date-time">
+                    <span id="current-time"></span>
+                    <span id="current-date"></span>
+                </div>
+            </header>
+
+            <!-- Main Grid -->
+            <main class="dashboard-grid">
+                <!-- Weather Widget -->
+                <section class="widget weather-widget">
+                    <div class="widget-header">
+                        <i class="fas fa-cloud-sun"></i>
+                        <h2>Weather</h2>
+                    </div>
+                    <div class="widget-content" id="weather-content">
+                        <p>Loading weather...</p>
+                    </div>
+                </section>
+
+                <div class="middle-column">
+                    <!-- Calendar Widget -->
+                    <section class="widget calendar-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-calendar"></i>
+                            <h2>Calendar</h2>
+                        </div>
+                        <div class="widget-content" id="calendar-content"></div>
+                    </section>
+
+                    <!-- Todo Widget -->
+                    <section class="widget todo-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-check-circle"></i>
+                            <h2>To-Do List</h2>
+                        </div>
+                        <div class="widget-content">
+                            <div class="todo-input">
+                                <input
+                                    type="text"
+                                    id="todo-input"
+                                    placeholder="Add a new task..."
+                                />
+                                <button id="todo-add-btn">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <ul id="todo-list"></ul>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <!-- Podcasts Widget -->
+                    <section class="widget podcast-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-podcast"></i>
+                            <h2>BBC Sounds</h2>
+                        </div>
+                        <div class="widget-content" id="podcast-content"></div>
+                    </section>
+
+                    <!-- Australia Radio Widget -->
+                    <section class="widget australia-radio-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-radio"></i>
+                            <h2>Australia Radio</h2>
+                        </div>
+                        <div class="widget-content" id="australia-radio-content"></div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <script src="js/weather.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/podcasts.js"></script>
+        <script src="js/australia-radio.js"></script>
+    </body>
+</html>
