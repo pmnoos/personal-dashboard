@@ -3,16 +3,22 @@ const worldClockTimeZones = [
   { label: "Local", zone: Intl.DateTimeFormat().resolvedOptions().timeZone },
   { label: "London", zone: "Europe/London" },
   { label: "Brisbane", zone: "Australia/Brisbane" },
+  { label: "Sweden", zone: "Europe/Stockholm" },
+  { label: "Christchurch", zone: "Pacific/Auckland" },
 ];
 
 function formatClockTime(timeZone) {
-  return new Intl.DateTimeFormat("en-GB", {
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-    hour12: false,
-    timeZone,
-  }).format(new Date());
+  try {
+    return new Intl.DateTimeFormat("en-GB", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: false,
+      timeZone,
+    }).format(new Date());
+  } catch {
+    return "Invalid zone";
+  }
 }
 
 function renderWorldClock() {

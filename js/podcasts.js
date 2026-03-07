@@ -37,6 +37,15 @@ const podcasts = [
     url: "https://www.bbc.co.uk/sounds/play/live/bbc_london",
     colour: "#ff9a9e",
   },
+  {
+    name: "BBC Radio 5 Live",
+    show: "Live Stream",
+    station: "BBC Sounds",
+    description: "Live — News, sport and live conversation",
+    icon: "📰",
+    url: "https://www.bbc.co.uk/sounds/play/live/bbc_radio_five_live",
+    colour: "#a0e7e5",
+  },
 ];
 
 const PRIVADO_APP_URL = "PrivadoVPN://";
