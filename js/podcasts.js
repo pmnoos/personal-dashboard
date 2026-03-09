@@ -1,7 +1,7 @@
 // ===== PODCASTS =====
 const podcasts = [
   {
-    name: "Jo Whiley",
+    name: "Late Night Jo ",
     show: "Evening Show",
     station: "BBC Radio 2",
     description: "Mon-Thu 7pm-9pm — Music, chat and good vibes",

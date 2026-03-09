@@ -2,7 +2,7 @@
 const worldClockTimeZones = [
   { label: "Local", zone: Intl.DateTimeFormat().resolvedOptions().timeZone },
   { label: "London", zone: "Europe/London" },
-  { label: "Brisbane", zone: "Australia/Brisbane" },
+  { label: "Perth", zone: "Australia/Perth" },
   { label: "Sweden", zone: "Europe/Stockholm" },
   { label: "Christchurch", zone: "Pacific/Auckland" },
 ];

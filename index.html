@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="description" content="Personal dashboard with weather, calendar, tasks, and radio.">
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Personal Dashboard</title>
@@ -55,7 +56,16 @@
                         </div>
                         <div class="widget-content" id="calendar-content"></div>
                     </section>
+                    <section class="widget quote-widget">
+                        <div class="widget-header">
+                            <i class="fas fa-quote-left"></i>
+                            <h2>Thought of the Day</h2>
+                        </div>
 
+                        <div class="widget-content">
+                            <p id="quote-text">Loading thought...</p>
+                        </div>
+                    </section>
                     <!-- Todo Widget -->
                     <section class="widget todo-widget">
                         <div class="widget-header">
@@ -75,8 +85,7 @@
                             </div>
                             <ul id="todo-list"></ul>
                         </div>
-                    </section>
-
+                  
                     <!-- Currency Widget -->
                     <section class="widget currency-widget">
                         <div class="widget-header">
@@ -108,12 +117,14 @@
                 </div>
             </main>
         </div>
-        <script src="js/weather.js"></script>
+        <script src="js/weather.js" defer></script>
         <script src="js/world-clock.js"></script>
         <script src="js/currency.js"></script>
         <script src="js/calendar.js"></script>
         <script src="js/todo.js"></script>
         <script src="js/podcasts.js"></script>
         <script src="js/australia-radio.js"></script>
+        <script src="js/quotes.js"></script>
+       
     </body>
 </html>
