@@ -15,7 +15,7 @@ const podcasts = [
     station: "BBC Radio 2",
     description: "Mon-Fri 1am-5am — News, sport and conversation",
     icon: "🌙",
-    url: "https://www.bbc.co.uk/sounds/brand/p002vsmz",
+    url: "https://www.bbc.co.uk/programmes/m002sf7w",
     colour: "#e0c3fc",
   },
   {
